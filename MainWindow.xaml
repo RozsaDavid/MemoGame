@@ -1,0 +1,41 @@
+﻿<Window x:Class="MemoriaJatek.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoriaJatek"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Bezár" x:Name="btnBezár" Click="btnBezár_Click"/>
+        </Menu>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.Resources>
+                <Style TargetType="Image">
+                    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                    <Setter Property="VerticalAlignment" Value="Stretch"/>
+                    <Setter Property="Margin" Value="5"/>
+                </Style>
+            </Grid.Resources>
+            <Image x:Name="im11" Grid.Row="0" Grid.Column="0" MouseDown="im_MouseDown"/>
+            <Image x:Name="im12" Grid.Row="0" Grid.Column="1" MouseDown="im_MouseDown"/>
+            <Image x:Name="im13" Grid.Row="0" Grid.Column="2" MouseDown="im_MouseDown"/>
+            <Image x:Name="im14" Grid.Row="0" Grid.Column="3" MouseDown="im_MouseDown"/>
+            <Image x:Name="im21" Grid.Row="1" Grid.Column="0" MouseDown="im_MouseDown"/>
+            <Image x:Name="im22" Grid.Row="1" Grid.Column="1" MouseDown="im_MouseDown"/>
+            <Image x:Name="im23" Grid.Row="1" Grid.Column="2" MouseDown="im_MouseDown"/>
+            <Image x:Name="im24" Grid.Row="1" Grid.Column="3" MouseDown="im_MouseDown"/>
+        </Grid>
+    </DockPanel>
+</Window>

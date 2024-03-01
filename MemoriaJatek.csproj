@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="kepek\margareta.png" />
+    <None Remove="kepek\nefelejcs.png" />
+    <None Remove="kepek\rozsa.jpg" />
+    <None Remove="kepek\szegfu.png" />
+    <None Remove="kepek\tulipan.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="kepek\margareta.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="kepek\nefelejcs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="kepek\rozsa.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="kepek\szegfu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="kepek\tulipan.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
